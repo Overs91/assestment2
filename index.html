@@ -34,6 +34,11 @@ Instructor: Washington Valencia
 	<link rel="shortcut icon" type="image/x-icon"
 		href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
 
+		<script src="/assets/js/script.js"></script>
+		<script src="/assets/js/script2.js"></script>
+		<script src="/assets/js/script3.js"></script>
+		<script src="/assets/js/script4.js"></script>
+
 
 </head>
 
@@ -259,7 +264,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-primary fw-bold">HTTP</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / Layer 7</p>
+					<p id="HTTP" class="m-0">xx port / Layer 7</p>
 
 				</div>
 
@@ -269,7 +274,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-danger fw-bold">HTTPS</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / Layer 7</p>
+					<p id="HTTPS" class="m-0">xx port / Layer 7</p>
 
 				</div>
 
@@ -279,7 +284,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-warning fw-bold">SSH</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / layer 7</p>
+					<p id="SSH" class="m-0">xx port / layer 7</p>
 
 				</div>
 
@@ -289,7 +294,7 @@ Instructor: Washington Valencia
 					<h2 class="h5 mb-1">
 						<span class="text-success fw-bold">DNS</span> <span class="fw-light">protocol</span>
 					</h2>
-					<p class="m-0">xx port / layer 7</p>
+					<p id="DNS" class="m-0">xx port / layer 7</p>
 
 				</div>
 
@@ -436,80 +441,17 @@ Instructor: Washington Valencia
 							List of <span class="text-primary fw-medium">Items</span>
 						</h2>
 
-
-						<div class="d-flex mb-4">
-
-							<!-- icon -->
-							<div class="text-primary">
-								<img width="40" height="20" src="demo.files/svg/various/line-chart.svg" alt="...">
-							</div>
-
-							<div class="mx-2">
-
-								<!-- heading -->
-								<h3 class="h5 fw-bold mb-1">
-									Item #1
-								</h3>
-
-								<!-- text -->
-								<p>
-									This is item #1.
-								</p>
-
-							</div>
-
-						</div>
+						 <div id="item-list">
+                    <!-- Dynamic list items will be inserted here -->
+                </div>
 
 
-						<div class="d-flex mb-4">
-
-							<!-- icon -->
-							<div class="text-primary">
-								<img width="40" height="20" src="demo.files/svg/various/line-chart.svg" alt="...">
-							</div>
-
-							<div class="mx-2">
-
-								<!-- heading -->
-								<h3 class="h5 fw-bold mb-1">
-									Item #2
-								</h3>
-
-								<!-- text -->
-								<p>
-									This is item #2.
-								</p>
-
-							</div>
-
-						</div>
-
-						<div class="d-flex mb-4">
-
-							<!-- icon -->
-							<div class="text-primary">
-								<img width="40" height="20" src="demo.files/svg/various/line-chart.svg" alt="...">
-							</div>
-
-							<div class="mx-2">
-
-								<!-- heading -->
-								<h3 class="h5 fw-bold mb-1">
-									Item #3
-								</h3>
-
-								<!-- text -->
-								<p>
-									This is item #3.
-								</p>
-
-							</div>
+										
 
 						</div>
 
 						<div class="text-align-end">
-							<a href="#" class="btn btn-primary btn-soft">How many items would you like in
-								the list?</a>
+                    <button id="item-button" class="btn btn-primary btn-soft">How many items would you like in the list?</button>
 						</div>
 
 					</div>
